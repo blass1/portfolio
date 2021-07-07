@@ -1,8 +1,9 @@
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <h2>Portfolio <strong>Blas Alfonso Carofile</strong></h2>
+    <Navbar />
   );
 }
 
