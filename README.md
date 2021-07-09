@@ -15,6 +15,9 @@ bcarofile@gmail.com
 * Bootstrap 4 (https://getbootstrap.com/)
 * React JS (https://reactjs.org/)
 * React font awesome (https://fontawesome.com/)
+* React-typed (https://www.npmjs.com/package/react-typed)
+* React-particles-js (https://www.npmjs.com/package/react-particles-js)
+
 
 ### Web-Tools
 * Canva (canva.com)

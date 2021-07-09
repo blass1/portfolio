@@ -5,7 +5,9 @@
 :root {
   --blanco-primario: #fff;
   --negro-primario: #000;
-  --naranja-primario: #f9ab00; 
+  --naranja-primario: #f97800;
+  --rojo-primario: #ef4035;
+  --hover-rojo-primario: #f33501;
 }
 
 body {
@@ -14,8 +16,13 @@ body {
 
 
 /********************* NAVBAR *********************/
+nav {
+  z-index: 2;
+}
+
 .logo {
   width: 20rem;
+  margin-top: 0.8rem;
 }
 
 .navbar {
@@ -55,3 +62,68 @@ Sobre escribir las "boostrap rules" con !important ***/
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--naranja-primario);
 }
+
+
+/********************* HEADER *********************/
+
+.header-wraper {
+  position: relative;
+  background: url(imgs/b7.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--naranja-primario);
+  text-transform: uppercase;
+  text-shadow: 0.1em 0.1em #333;
+}
+
+/********* HEADER MAIN OFFER *********/
+
+.btn-main-offer {
+  border: 2px solid var(--rojo-primario);
+  /* background-color: var(--negro-primario); */
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--negro-primario);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--hover-rojo-primario);
+  color: var(--blanco-primario);
+  transition: 0.5s;
+}
+
+/********* PARTICLES *********/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+/* @media(max-width: 768px){
+  .particles-canvas {
+    display: none;
+  }
+} */
