@@ -55,6 +55,12 @@ Sobre escribir las "boostrap rules" con !important ***/
   height: 6rem !important;
 }
 
+@media(max-width:768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--naranja-primario);
 }
@@ -95,6 +101,17 @@ Sobre escribir las "boostrap rules" con !important ***/
   text-shadow: 0.1em 0.1em #333;
 }
 
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+
+}
+
 /********* HEADER MAIN OFFER *********/
 
 .btn-main-offer {
@@ -122,8 +139,9 @@ Sobre escribir las "boostrap rules" con !important ***/
   z-index: 1;
 }
 
-/* @media(max-width: 768px){
+
+@media(max-width: 768px){
   .particles-canvas {
     display: none;
   }
-} */
+}
