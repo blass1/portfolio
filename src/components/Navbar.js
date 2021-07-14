@@ -1,7 +1,10 @@
 import React from 'react'
 import logocarofile from '../logocarofile.gif'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faUserTie, faProjectDiagram, faBuilding, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons"
+import {
+  Link
+} from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -16,18 +19,21 @@ const Navbar = () => {
             
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav">
+               
+                <li className="nav-item">
+                  <Link to="/" className="nav-link"><FontAwesomeIcon icon={faUserTie} style={{ color: "#fff" }}/> Sobre mi </Link>
+                </li>
+
+                <li className="nav-item">
+                  <Link to="/Projects" className="nav-link"><FontAwesomeIcon icon={faProjectDiagram} style={{ color: "#fff" }}/> Proyectos </Link>
+                </li>
                 
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#">Experiencia Laboral</a>
+                  <Link to="/WorkExperience" className="nav-link"><FontAwesomeIcon icon={faBuilding} style={{ color: "#fff" }}/> Experiencia Laboral </Link>
                 </li>
+               
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Portfolio / Proyectos</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Sobre mi</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Contacto</a>
+                  <Link to="/ContactMe" className="nav-link"><FontAwesomeIcon icon={faEnvelopeOpenText} style={{ color: "#fff" }}/> Contacto </Link>
                 </li>
 
               </ul>
